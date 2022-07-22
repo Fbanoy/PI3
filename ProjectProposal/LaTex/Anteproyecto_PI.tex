@@ -1,0 +1,234 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{natbib}
+\usepackage{lscape}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{algpseudocode}
+\usepackage{fancyhdr}
+\geometry{verbose,letterpaper,tmargin=3cm,bmargin=3cm,lmargin=2.5cm,rmargin=2.5cm}
+
+% Tables
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+
+% Avoid to split words at the end of each line
+\usepackage[none]{hyphenat}
+
+\begin{document}
+
+% BEGIN TITLE PAGE
+\begin{titlepage}
+
+\Large
+\sffamily
+
+\begin{center}
+  \begin{tabular}{c}
+    \includegraphics[width=0.30\textwidth]{figures/logo-eafit.png}
+  \end{tabular}
+\end{center}
+
+\vfill
+\begin{center}
+  \LARGE Title
+\end{center}
+
+\vspace*{1cm}
+\centerline{\LARGE Student\footnotemark}  
+\footnotetext{Student information (\textcolor{red}{email})}
+\vfill
+
+\begin{center}
+Advisor(s): \\
+Advisor 1\footnote{Affiliation, \textcolor{red}{email}}   \\
+Advisor 2\footnote{Affiliation, \textcolor{red}{email}}  
+\end{center}
+
+\vfill
+
+\begin{center}
+  \large
+    Research practice (\textcolor{red}{1, 2, 3}) \\
+  Research proposal \\
+  Mathematical Engineering\\
+  School of Applied Sciences and Engineering\\
+  Universidad EAFIT \\
+\end{center}
+
+\vfill
+\centerline{MONTH YEAR}
+\vspace*{0.7cm}
+\end{titlepage}
+
+% END TITLE PAGE
+
+\section{Introduction (\textcolor{red}{3 a 4 párrafos})}
+
+Debe incluir:
+
+\begin{itemize}
+\item Contexto corto para ubicar al lector.
+\item Corta descripción del problema u oportunidad de investigación.
+\item Aporte de la investigación.
+\end{itemize}
+
+
+\section{Statement of the problem}
+
+En este apartado debemos ampliar la descripción del problema.
+
+\subsection{Statement of the problem (\textcolor{red}{4 a 5 párrafos})}
+
+En esta subsección se hace una ampliación del problema descrito en la introducción. Acá hay
+algunas aspectos que se pueden abordar acá.
+
+\begin{itemize}
+\item En algunos casos, un problema tiene diferentes nombres en la literatura. En estos casos es bueno contarle al lector con qué otros nombre se conoce el problema en diferentes áreas de conocimiento.
+\item Si es una investigación aplicada, es conveniente pensar en que matices o particularidades adquiere el problema al aplicarse en un contexto específico. Puede que lo que no sea un problema en un lugar si lo sea en otro.
+\item ¿A quienes afecta el problema?¿a qué escala opera? (grupos poblacionales, zonas geográficas, período temporal: pasado, actual o futuro).
+\item ¿Qué desencadena o genera el problema?
+\item ¿Qué repercusiones o efectos tiene el problema?
+\item ¿Se han postulado soluciones a este problema pero no lo suficientemente satisfactorias?
+\end{itemize}
+
+
+\subsection{Formalization of the problem}
+
+En esta subsección debén escribir una descripción más formal, muy al grano,
+del problema.  Se deben incluir los principales elementos matemáticos que
+tiene el problema.  En la siguiente figura hay un ejemplo de formalización del
+problema tomado de Duque, J. C., Anselin, L., \& Rey, S. J. (2012). The
+max‐p‐regions problem. Journal of Regional Science, 52(3), 397-419.
+
+
+ \begin{center}
+  \begin{tabular}{c}
+    \includegraphics[width=0.70\textwidth]{figures/problem_statement}
+  \end{tabular}
+\end{center}
+
+
+\section{Objectives}
+
+\subsection{General objective (\textcolor{red}{sólo uno})}
+
+El objetivo general enmarca todo el trabajo. Está estrechamente relacionado con el
+título y con la pregunta de investigación y describe de intensión de la
+invesstigación.
+
+La estructura de un objetivo general es la siguiente: verbo en infinitivo (uno
+solo) + qué (objeto de estudio) + cómo + para qué.
+
+
+\subsection{Specific objectives (\textcolor{red}{3 o 4 objetivos})}
+
+Son un conjunto de objetivos más pequeños que permitirán alcanzar el general.
+La estructura de un objetivo general es la siguiente: Verbo en infinitivo (uno
+solo) + qué (objeto de estudio) + cómo.
+
+Importante: los objetivos específicos no se pueden confundir con una lista de
+tareas. El objetivo debe comenzar con un fin/logro no con el medio/actividad
+(las actividades van en la metodología); por ejemplo, un objetivo específico
+del tipo ``Realizar una revisión bibliográfica para...'' debería transformarse
+en algo como ``Encontrar información científica por medio de una revisión
+sistemática de la literatura''.
+
+
+\section{Justification (\textcolor{red}{4 o 5 párrafos})}
+
+En esta sección se argumenta el por qué es importante resolver el problema o
+contestar la pregunta de investigación. Las argumentaciones pueden ser de tipo
+teórico o práctico y soportadas en literatura.
+
+\begin{itemize}
+\item Destaca los beneficios derivados del aporte (¿para qué servirá esta investigación?, ¿qué aporta de nuevo esta investigación?, ¿cuáles son los beneficios?, ¿quiénes serán los beneficiados y de qué modo?, ¿qué se prevé cambiar con la investigación?, ¿cuál es la utilidad?, ¿resolverá algún problema práctico?, ¿se cubrirá algún gap de conocimiento?, ¿los resultados se podrán generalizar?, ¿sirve para apoyar alguna teoría?, ¿permite un mejor estudio de una población o fenómeno?, ¿se pueden establecer plazos para los beneficios?). OJO: las preguntas no se incluyen en el cuerpo del texto, son sólo una guía para encontrar los argumentos.
+\item Las respuestas a estas preguntas deben considerar tres aspectos: teórico, práctico y metodológico.
+\end{itemize}
+
+
+\section{Scope (\textcolor{red}{2 o 3 párrafos})}
+
+Describe las principales barreras o limitaciones de la investigación,
+así como las principales herramientas y otros recursos que esperaba utilizar
+durante la ejecución del proyecto. También describe los principales
+resultados esperados de la investigación
+
+\section{State of the art (\textcolor{red}{5 a 6 párrafos})}
+
+Describe las principales referencias relacionadas con el problema. Este estado
+del arte puede referirse al problema o aplicación específica, o bien a los
+métodos aplicados para solucionarlo. No debes olvidar incluir los trabajos más
+importantes y los más recientes.
+
+\section{Proposed methodology (\textcolor{red}{5 o 6 párrafos})}
+
+Describe en este apartado los métodos, técnicas, algoritmos, etc. que se
+utilizarán durante la ejecución del proyecto.
+
+Incluye aspectos como:
+
+\begin{itemize}
+\item ¿Qué métodos se suelen usar para responder la pregunta de investigación?
+\item ¿Por qué seleccionaste el método que usarás?
+\item Describe el método: Supuestos básicos, ventajas y desventajas del método.
+\end{itemize}
+
+
+\section{Schedule, commitments and deliverables}
+
+\begin{itemize}
+\item Cronograma de las actividades a realizar durante la PI.
+\item Compromisos entre el tutor y el estudiante (e.g., periodicidad de
+    reuniones, entrega de datos, etc.).
+\item Lista clara de entregables que se esperan de la práctica.
+\end{itemize}
+
+Adapta es siguiente cronograma a tu PI.
+
+\begin{table}[h!]
+	\begin{center}
+     \caption{Schedule}
+	\label{tb_sch}
+       
+    \scalebox{0.78}{
+    \normalsize{
+		\begin{tabular}{|p{7cm}|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|}
+			\hline
+			\multirow{2}{*}{\emph{Activity}} & \multicolumn{18}{c|}{\emph{Weeks}} \\
+			\cline{2-19}
+            & \emph{\footnotesize 1} & \emph{\footnotesize 2} & \emph{\footnotesize 3} & \emph{\footnotesize 4} & \emph{\footnotesize 5} & \emph{\footnotesize 6} & \emph{\footnotesize 7} & \emph{\footnotesize 8} & \emph{\footnotesize 9} & \emph{\footnotesize 10} & \emph{\footnotesize 11} & \emph{\footnotesize 12} & \emph{\footnotesize 13} & \emph{\footnotesize 14} & \emph{\footnotesize 15} & \emph{\footnotesize 16} & \emph{\footnotesize 17} & \emph{\footnotesize 18} \\
+			\hline
+			Activity 1 & \cellcolor{black}{1}  & \cellcolor{black}{1} & \cellcolor{black}{1} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+			\hline
+			Activity 2 & & & & \cellcolor{black}{1} & \cellcolor{black}{1} & \cellcolor{black}{1} & \cellcolor{black}{1} &  \cellcolor{black}{1}& & & & & & & & & & \\
+			\hline
+			Activity 3 & & & & & & & & & \cellcolor{black}{1} &  \cellcolor{black}{1}& \cellcolor{black}{1} & \cellcolor{black}{1} & & & & & & \\
+			\hline
+			Activity 4 & & & & & & & & & & & & & \cellcolor{black}{1} & \cellcolor{black}{1} & \cellcolor{black}{1} & & & \\
+			\hline
+			Activity 5 & & & & & & & & & & & & & & & & \cellcolor{black}{1} & \cellcolor{black}{1} & \cellcolor{black}{1} \\
+			\hline
+		\end{tabular}
+        }
+        }
+	\end{center}
+\end{table}
+
+\section{Intellectual property}
+
+According to the internal regulation on intellectual property within
+Universidad EAFIT, the results of this research practice are product of
+\textcolor{red}{\emph{Student Name}} and \textcolor{red}{\emph{Tutor Name}}.\\
+
+In case further products, beside academic articles, that could be generated from this work, the intellectual property distribution related to them will be directed under the current regulation of this matter determined by \cite{reglamento2017}.
+
+\bibliographystyle{authordate1}
+\bibliography{references}
+
+\end{document}
